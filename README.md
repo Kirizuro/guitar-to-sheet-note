@@ -1,5 +1,68 @@
-# Vue 3 + TypeScript + Vite
+# Guitar to Sheet Note
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A web app that uses your microphone to detect the note being played on a guitar and displays the corresponding sheet music and tablature in real time.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Features
+
+- 🎤 Microphone input for live note detection
+- 🎼 Displays detected note on a musical staff (sheet music)
+- 🎸 Shows corresponding guitar tablature position
+- ⚡ Built with Vue 3, VexFlow, and Pitchfinder
+
+## Demo
+
+![Screenshot](screenshot.png) <!-- Add a screenshot if available -->
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or newer recommended)
+- npm
+
+### Installation
+
+```sh
+npm install
+```
+
+### Run Development Server
+
+```sh
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Build for Production
+
+```sh
+npm run build
+```
+
+## Usage
+
+1. Click the **Access Microphone** button.
+2. Play a note on your guitar.
+3. See the detected note appear on both the sheet music and tablature.
+
+## Technologies Used
+
+- [Vue 3](https://vuejs.org/)
+- [VexFlow](https://www.vexflow.com/) (music notation rendering)
+- [Pitchfinder](https://github.com/peterkhayes/pitchfinder) (pitch detection)
+- [Tailwind CSS](https://tailwindcss.com/) (styling)
+
+## Troubleshooting
+
+- Make sure your browser allows microphone access.
+- Use Chrome, Firefox, or Safari for best compatibility.
+- If Tailwind styles are not applied, check your `tailwind.config.js` and ensure you have imported Tailwind in your main CSS file.
+
+## License
+
+MIT
+
+## Author
+
+[Claudio Junior](https://github.com/Kirizuro)
